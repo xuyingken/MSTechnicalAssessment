@@ -9,6 +9,16 @@
             "mainClass": "com.microservices.CustomerAccountsApplication",
             "projectName": "customerAccounts",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CustomerApplication<customer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.microservices.CustomerApplication",
+            "projectName": "customer",
+            "args": ""
         }
     ]
 }

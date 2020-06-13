@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "1102ab58-2783-4a3b-aef4-00da73094a12",
+		"name": "OC_Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CustomerAccount Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ken-customer-accounts-mic-eval.ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001.sng01.containers.appdomain.cloud/customerAccounts/1",
+					"protocol": "http",
+					"host": [
+						"ken-customer-accounts-mic-eval",
+						"ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001",
+						"sng01",
+						"containers",
+						"appdomain",
+						"cloud"
+					],
+					"path": [
+						"customerAccounts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerAccount POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountName\": \"My Account\",\n    \"accountType\": \"Current\",\n    \"currency\": \"SGD\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ken-customer-accounts-mic-eval.ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001.sng01.containers.appdomain.cloud/customerAccounts/update",
+					"protocol": "http",
+					"host": [
+						"ken-customer-accounts-mic-eval",
+						"ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001",
+						"sng01",
+						"containers",
+						"appdomain",
+						"cloud"
+					],
+					"path": [
+						"customerAccounts",
+						"update"
+					]
+				},
+				"description": "POST"
+			},
+			"response": []
+		},
+		{
+			"name": "Customer GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ken-customer-mic-eval.ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001.sng01.containers.appdomain.cloud/customers/account/1",
+					"protocol": "http",
+					"host": [
+						"ken-customer-mic-eval",
+						"ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001",
+						"sng01",
+						"containers",
+						"appdomain",
+						"cloud"
+					],
+					"path": [
+						"customers",
+						"account",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountNumber\":\"12345678\",\n    \"accountName\": \"My Account\",\n    \"accountType\": \"Current\",\n    \"balance\":\"100.00\",\n    \"currency\": \"SGD\",\n    \"customerId\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ken-customer-mic-eval.ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001.sng01.containers.appdomain.cloud/customers/account",
+					"protocol": "http",
+					"host": [
+						"ken-customer-mic-eval",
+						"ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001",
+						"sng01",
+						"containers",
+						"appdomain",
+						"cloud"
+					],
+					"path": [
+						"customers",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Actuator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ken-customer-mic-eval.ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001.sng01.containers.appdomain.cloud/actuator",
+					"protocol": "http",
+					"host": [
+						"ken-customer-mic-eval",
+						"ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001",
+						"sng01",
+						"containers",
+						"appdomain",
+						"cloud"
+					],
+					"path": [
+						"actuator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerAccount Actuator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ken-customer-accounts-mic-eval.ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001.sng01.containers.appdomain.cloud/actuator",
+					"protocol": "http",
+					"host": [
+						"ken-customer-accounts-mic-eval",
+						"ocp-cloud-native-5bde58e3d6d567e3c92634c0d6b4f48b-0001",
+						"sng01",
+						"containers",
+						"appdomain",
+						"cloud"
+					],
+					"path": [
+						"actuator"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

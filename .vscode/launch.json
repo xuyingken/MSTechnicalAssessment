@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CustomerAccountsApplication<customerAccounts>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.microservices.CustomerAccountsApplication",
+            "projectName": "customerAccounts",
+            "args": ""
+        }
+    ]
+}

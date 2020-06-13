@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 import com.microservices.domain.Customer;
 import com.microservices.domain.CustomerAccount;
-import com.microservices.domain.CustomerAccountInput;
 
 
 @Aspect

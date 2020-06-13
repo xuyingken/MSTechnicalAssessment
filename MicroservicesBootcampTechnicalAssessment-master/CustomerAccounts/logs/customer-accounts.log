@@ -1,0 +1,253 @@
+2020-05-30 20:10:44,349 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-05-30 20:10:45,328 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-30 20:10:45,393 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 53ms. Found 1 JPA repository interfaces.
+2020-05-30 20:10:45,962 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=59807505-0a2f-3bb7-91bc-bdcc7e6cd94f
+2020-05-30 20:10:46,833 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-05-30 20:10:47,087 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-05-30 20:10:47,171 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-30 20:10:47,263 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-30 20:10:47,467 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-30 20:10:47,700 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-30 20:10:48,630 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-30 20:10:48,639 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:10:48,820 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [main] Autowired annotation is not supported on static methods: public static void com.microservices.CustomerAccountsApplication.main(java.lang.String[])
+2020-05-30 20:10:49,586 WARN org.springframework.data.rest.core.mapping.RepositoryCollectionResourceMapping [main] @RestResource detected to customize the repository resource for com.microservices.data.CustomerAccountRepository! Use @RepositoryRestResource instead!
+2020-05-30 20:10:50,273 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-30 20:10:50,720 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:10:51,226 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-30 20:10:52,467 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2020-05-30 20:10:52,468 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2020-05-30 20:10:52,491 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2020-05-30 20:10:52,547 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 78 ms
+2020-05-30 20:10:52,878 INFO org.springframework.boot.StartupInfoLogger [main] Started CustomerAccountsApplicationTests in 9.385 seconds (JVM running for 10.516)
+2020-05-30 20:10:53,384 INFO com.microservices.aspect.CustomerAccountsAspect [main] Before method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:10:53,384 INFO com.microservices.aspect.CustomerAccountsAspect [main] Finding Customer Account with customerId(1)
+2020-05-30 20:10:53,406 INFO com.microservices.aspect.CustomerAccountsAspect [main] After method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:10:53,407 INFO com.microservices.aspect.CustomerAccountsAspect [main] Found Customer Account with customerId(1):
+2020-05-30 20:10:53,408 INFO com.microservices.aspect.CustomerAccountsAspect [main] --------------------------------
+2020-05-30 20:10:53,409 INFO com.microservices.aspect.CustomerAccountsAspect [main] Customer [accountNumber=12345678, accountName=My Account, accountType=Current, balance=100, currency=SGD, customerId=1]
+2020-05-30 20:10:53,409 INFO com.microservices.aspect.CustomerAccountsAspect [main] 
+2020-05-30 20:10:53,454 INFO com.microservices.aspect.CustomerAccountsAspect [main] Before method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:10:53,455 INFO com.microservices.aspect.CustomerAccountsAspect [main] Updating Customer Account with customerId(1)
+2020-05-30 20:10:53,458 INFO com.microservices.aspect.CustomerAccountsAspect [main] After method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:10:53,459 INFO com.microservices.aspect.CustomerAccountsAspect [main] Updated Customer Account with customerId(1)
+2020-05-30 20:10:53,460 INFO com.microservices.aspect.CustomerAccountsAspect [main] --------------------------------
+2020-05-30 20:10:53,460 INFO com.microservices.aspect.CustomerAccountsAspect [main] CustomerAccountInput [accountName=My Account, accountType=Current, currency=SGD]
+2020-05-30 20:10:53,461 INFO com.microservices.aspect.CustomerAccountsAspect [main] 
+2020-05-30 20:10:54,331 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:10:54,335 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:10:54,335 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-05-30 20:10:54,342 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-30 20:10:54,346 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-30 20:11:47,115 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-05-30 20:11:47,844 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-30 20:11:47,888 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 37ms. Found 1 JPA repository interfaces.
+2020-05-30 20:11:48,190 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=e2bc945a-98f3-3b98-b464-250fee33f344
+2020-05-30 20:11:49,083 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2020-05-30 20:11:49,091 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-30 20:11:49,092 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-30 20:11:49,185 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-30 20:11:49,186 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2059 ms
+2020-05-30 20:11:49,457 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-30 20:11:49,549 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-30 20:11:49,555 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-05-30 20:11:50,675 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-30 20:11:50,709 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-30 20:11:50,805 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-30 20:11:50,897 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-30 20:11:51,399 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-30 20:11:51,405 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:11:51,485 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-30 20:11:51,496 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static methods: public static void com.microservices.CustomerAccountsApplication.main(java.lang.String[])
+2020-05-30 20:11:52,185 WARN org.springframework.data.rest.core.mapping.RepositoryCollectionResourceMapping [restartedMain] @RestResource detected to customize the repository resource for com.microservices.data.CustomerAccountRepository! Use @RepositoryRestResource instead!
+2020-05-30 20:11:52,508 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-30 20:11:52,698 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:11:52,987 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-30 20:11:53,628 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 16 endpoint(s) beneath base path '/actuator'
+2020-05-30 20:11:53,656 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-30 20:11:53,657 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-05-30 20:11:53,692 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 35 ms
+2020-05-30 20:11:53,783 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-30 20:11:53,789 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started CustomerAccountsApplication in 7.33 seconds (JVM running for 7.929)
+2020-05-30 20:12:04,914 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] Before method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:12:04,915 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] Finding Customer Account with customerId(1)
+2020-05-30 20:12:04,934 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] After method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:12:04,935 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] Found Customer Account with customerId(1):
+2020-05-30 20:12:04,935 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] --------------------------------
+2020-05-30 20:12:04,935 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] Customer [accountNumber=12345678, accountName=My Account, accountType=Current, balance=100, currency=SGD, customerId=1]
+2020-05-30 20:12:04,936 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] 
+2020-05-30 20:17:18,071 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:17:18,074 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-9] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:17:18,075 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-9] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-05-30 20:17:18,303 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-9] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-05-30 20:17:19,048 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown initiated...
+2020-05-30 20:17:19,051 INFO com.zaxxer.hikari.HikariDataSource [Thread-9] HikariPool-1 - Shutdown completed.
+2020-05-30 20:17:19,591 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-05-30 20:17:20,144 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-30 20:17:20,155 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 10ms. Found 1 JPA repository interfaces.
+2020-05-30 20:17:20,291 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=e2bc945a-98f3-3b98-b464-250fee33f344
+2020-05-30 20:17:20,679 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-05-30 20:17:20,693 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2020-05-30 20:17:20,695 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-30 20:17:20,697 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-30 20:17:20,711 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-30 20:17:20,712 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1115 ms
+2020-05-30 20:17:20,984 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2020-05-30 20:17:20,988 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2020-05-30 20:17:20,989 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-05-30 20:17:21,625 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-30 20:17:21,633 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-30 20:17:21,687 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-30 20:17:21,687 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:17:21,748 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-30 20:17:21,757 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static methods: public static void com.microservices.CustomerAccountsApplication.main(java.lang.String[])
+2020-05-30 20:17:21,807 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-30 20:17:21,887 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 67ms. Found 1 JPA repository interfaces.
+2020-05-30 20:17:22,049 WARN org.springframework.data.rest.core.mapping.RepositoryCollectionResourceMapping [restartedMain] @RestResource detected to customize the repository resource for com.microservices.data.CustomerAccountRepository! Use @RepositoryRestResource instead!
+2020-05-30 20:17:22,230 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-30 20:17:22,333 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:17:22,453 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=59807505-0a2f-3bb7-91bc-bdcc7e6cd94f
+2020-05-30 20:17:22,498 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-30 20:17:22,903 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 16 endpoint(s) beneath base path '/actuator'
+2020-05-30 20:17:22,965 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-30 20:17:22,970 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started CustomerAccountsApplication in 3.547 seconds (JVM running for 337.108)
+2020-05-30 20:17:22,981 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-05-30 20:17:23,317 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-05-30 20:17:23,536 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-05-30 20:17:23,617 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-30 20:17:23,685 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-30 20:17:23,869 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-30 20:17:24,062 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-30 20:17:24,987 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-30 20:17:24,997 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:17:25,042 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [main] Autowired annotation is not supported on static methods: public static void com.microservices.CustomerAccountsApplication.main(java.lang.String[])
+2020-05-30 20:17:26,073 WARN org.springframework.data.rest.core.mapping.RepositoryCollectionResourceMapping [main] @RestResource detected to customize the repository resource for com.microservices.data.CustomerAccountRepository! Use @RepositoryRestResource instead!
+2020-05-30 20:17:26,756 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-30 20:17:27,194 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:17:27,675 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-30 20:17:28,944 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(17)-127.0.0.1] Application shutdown requested.
+2020-05-30 20:17:28,950 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [RMI TCP Connection(17)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:17:28,951 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(17)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:17:28,952 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [RMI TCP Connection(17)-127.0.0.1] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-05-30 20:17:28,986 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2020-05-30 20:17:28,987 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2020-05-30 20:17:29,014 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2020-05-30 20:17:29,078 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 89 ms
+2020-05-30 20:17:29,160 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [RMI TCP Connection(17)-127.0.0.1] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-05-30 20:17:29,365 INFO org.springframework.boot.StartupInfoLogger [main] Started CustomerAccountsApplicationTests in 9.645 seconds (JVM running for 10.921)
+2020-05-30 20:17:29,481 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(17)-127.0.0.1] HikariPool-2 - Shutdown initiated...
+2020-05-30 20:17:29,485 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(17)-127.0.0.1] HikariPool-2 - Shutdown completed.
+2020-05-30 20:17:29,494 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(17)-127.0.0.1] Stopping service [Tomcat]
+2020-05-30 20:17:29,883 INFO com.microservices.aspect.CustomerAccountsAspect [main] Before method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:17:29,884 INFO com.microservices.aspect.CustomerAccountsAspect [main] Finding Customer Account with customerId(1)
+2020-05-30 20:17:29,904 INFO com.microservices.aspect.CustomerAccountsAspect [main] After method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:17:29,906 INFO com.microservices.aspect.CustomerAccountsAspect [main] Found Customer Account with customerId(1):
+2020-05-30 20:17:29,907 INFO com.microservices.aspect.CustomerAccountsAspect [main] --------------------------------
+2020-05-30 20:17:29,908 INFO com.microservices.aspect.CustomerAccountsAspect [main] Customer [accountNumber=12345678, accountName=My Account, accountType=Current, balance=100, currency=SGD, customerId=1]
+2020-05-30 20:17:29,910 INFO com.microservices.aspect.CustomerAccountsAspect [main] 
+2020-05-30 20:17:29,959 INFO com.microservices.aspect.CustomerAccountsAspect [main] Before method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:17:29,960 INFO com.microservices.aspect.CustomerAccountsAspect [main] Updating Customer Account with customerId(1)
+2020-05-30 20:17:29,963 INFO com.microservices.aspect.CustomerAccountsAspect [main] After method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:17:29,965 INFO com.microservices.aspect.CustomerAccountsAspect [main] Updated Customer Account with customerId(1)
+2020-05-30 20:17:29,966 INFO com.microservices.aspect.CustomerAccountsAspect [main] --------------------------------
+2020-05-30 20:17:29,967 INFO com.microservices.aspect.CustomerAccountsAspect [main] CustomerAccountInput [accountName=My Account, accountType=Current, currency=SGD]
+2020-05-30 20:17:29,968 INFO com.microservices.aspect.CustomerAccountsAspect [main] 
+2020-05-30 20:17:57,038 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-05-30 20:17:57,904 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-30 20:17:57,961 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 46ms. Found 1 JPA repository interfaces.
+2020-05-30 20:17:58,459 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=59807505-0a2f-3bb7-91bc-bdcc7e6cd94f
+2020-05-30 20:17:59,259 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2020-05-30 20:17:59,478 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-05-30 20:17:59,556 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-30 20:17:59,658 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-30 20:17:59,858 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-30 20:18:00,020 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-30 20:18:00,775 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-30 20:18:00,785 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:18:00,822 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [main] Autowired annotation is not supported on static methods: public static void com.microservices.CustomerAccountsApplication.main(java.lang.String[])
+2020-05-30 20:18:01,643 WARN org.springframework.data.rest.core.mapping.RepositoryCollectionResourceMapping [main] @RestResource detected to customize the repository resource for com.microservices.data.CustomerAccountRepository! Use @RepositoryRestResource instead!
+2020-05-30 20:18:02,254 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-30 20:18:02,669 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:18:03,044 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-30 20:18:04,189 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2020-05-30 20:18:04,190 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2020-05-30 20:18:04,210 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2020-05-30 20:18:04,265 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 75 ms
+2020-05-30 20:18:04,562 INFO org.springframework.boot.StartupInfoLogger [main] Started CustomerAccountsApplicationTests in 8.239 seconds (JVM running for 9.314)
+2020-05-30 20:18:05,005 INFO com.microservices.aspect.CustomerAccountsAspect [main] Before method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:18:05,005 INFO com.microservices.aspect.CustomerAccountsAspect [main] Finding Customer Account with customerId(1)
+2020-05-30 20:18:05,024 INFO com.microservices.aspect.CustomerAccountsAspect [main] After method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:18:05,025 INFO com.microservices.aspect.CustomerAccountsAspect [main] Found Customer Account with customerId(1):
+2020-05-30 20:18:05,025 INFO com.microservices.aspect.CustomerAccountsAspect [main] --------------------------------
+2020-05-30 20:18:05,026 INFO com.microservices.aspect.CustomerAccountsAspect [main] Customer [accountNumber=12345678, accountName=My Account, accountType=Current, balance=100, currency=SGD, customerId=1]
+2020-05-30 20:18:05,026 INFO com.microservices.aspect.CustomerAccountsAspect [main] 
+2020-05-30 20:18:05,066 INFO com.microservices.aspect.CustomerAccountsAspect [main] Before method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:18:05,067 INFO com.microservices.aspect.CustomerAccountsAspect [main] Updating Customer Account with customerId(1)
+2020-05-30 20:18:05,071 INFO com.microservices.aspect.CustomerAccountsAspect [main] After method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:18:05,072 INFO com.microservices.aspect.CustomerAccountsAspect [main] Updated Customer Account with customerId(1)
+2020-05-30 20:18:05,073 INFO com.microservices.aspect.CustomerAccountsAspect [main] --------------------------------
+2020-05-30 20:18:05,075 INFO com.microservices.aspect.CustomerAccountsAspect [main] CustomerAccountInput [accountName=My Account, accountType=Current, currency=SGD]
+2020-05-30 20:18:05,076 INFO com.microservices.aspect.CustomerAccountsAspect [main] 
+2020-05-30 20:18:06,080 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:18:06,084 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:18:06,085 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-05-30 20:18:06,091 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-05-30 20:18:06,095 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-05-30 20:31:51,675 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-05-30 20:31:52,681 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-30 20:31:52,753 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 58ms. Found 1 JPA repository interfaces.
+2020-05-30 20:31:53,135 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=e2bc945a-98f3-3b98-b464-250fee33f344
+2020-05-30 20:31:54,255 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2020-05-30 20:31:54,269 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-30 20:31:54,269 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.34]
+2020-05-30 20:31:54,390 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-30 20:31:54,390 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2702 ms
+2020-05-30 20:31:54,689 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-05-30 20:31:54,866 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-05-30 20:31:54,873 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-05-30 20:31:56,061 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-30 20:31:56,125 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-30 20:31:56,317 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-30 20:31:56,468 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-05-30 20:31:57,234 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-30 20:31:57,245 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-30 20:31:57,331 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-05-30 20:31:57,342 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static methods: public static void com.microservices.CustomerAccountsApplication.main(java.lang.String[])
+2020-05-30 20:31:58,176 WARN org.springframework.data.rest.core.mapping.RepositoryCollectionResourceMapping [restartedMain] @RestResource detected to customize the repository resource for com.microservices.data.CustomerAccountRepository! Use @RepositoryRestResource instead!
+2020-05-30 20:31:58,519 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-30 20:31:58,732 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-30 20:31:59,066 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-30 20:31:59,832 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 16 endpoint(s) beneath base path '/actuator'
+2020-05-30 20:31:59,994 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2020-05-30 20:32:00,004 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started CustomerAccountsApplication in 9.16 seconds (JVM running for 9.874)
+2020-05-30 20:32:00,278 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-30 20:32:00,278 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2020-05-30 20:32:00,299 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 21 ms
+2020-05-30 20:32:28,430 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] Before method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:32:28,431 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] Finding Customer Account with customerId(1)
+2020-05-30 20:32:28,452 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] After method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:32:28,452 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] Found Customer Account with customerId(1):
+2020-05-30 20:32:28,453 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] --------------------------------
+2020-05-30 20:32:28,453 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] Customer [accountNumber=12345678, accountName=My Account, accountType=Current, balance=100, currency=SGD, customerId=1]
+2020-05-30 20:32:28,454 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-1] 
+2020-05-30 20:32:28,709 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-2] Before method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:32:28,709 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-2] Updating Customer Account with customerId(1)
+2020-05-30 20:32:28,714 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-2] After method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:32:28,715 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-2] Updated Customer Account with customerId(1)
+2020-05-30 20:32:28,715 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-2] --------------------------------
+2020-05-30 20:32:28,716 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-2] CustomerAccountInput [accountName=My Account, accountType=Current, currency=SGD]
+2020-05-30 20:32:28,716 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-2] 
+2020-05-30 20:47:03,740 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-4] Before method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:47:03,741 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-4] Finding Customer Account with customerId(1)
+2020-05-30 20:47:03,745 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-4] After method:CustomerAccount com.microservices.controller.CustomerAccountController.getCustomer(String)
+2020-05-30 20:47:03,745 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-4] Found Customer Account with customerId(1):
+2020-05-30 20:47:03,746 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-4] --------------------------------
+2020-05-30 20:47:03,746 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-4] Customer [accountNumber=12345678, accountName=My Account, accountType=Current, balance=100, currency=SGD, customerId=1]
+2020-05-30 20:47:03,746 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-4] 
+2020-05-30 20:47:03,896 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-5] Before method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:47:03,897 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-5] Updating Customer Account with customerId(1)
+2020-05-30 20:47:03,900 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-5] After method:ResponseEntity com.microservices.controller.CustomerAccountController.updateCustomer(CustomerAccountInput)
+2020-05-30 20:47:03,901 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-5] Updated Customer Account with customerId(1)
+2020-05-30 20:47:03,901 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-5] --------------------------------
+2020-05-30 20:47:03,902 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-5] CustomerAccountInput [accountName=My Account, accountType=Current, currency=SGD]
+2020-05-30 20:47:03,902 INFO com.microservices.aspect.CustomerAccountsAspect [http-nio-8090-exec-5] 
